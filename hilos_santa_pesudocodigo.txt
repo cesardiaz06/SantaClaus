@@ -1,0 +1,18 @@
+mientras (1) 
+    /* Espera a ser despertado */
+    espera(santa_sem)
+    espera(Exclusion Mutua)
+
+    /* Todos los renos preparados? */
+    si (renos igual a TOTAL_RENOS) 
+        prepararTrineo()
+        /* Notsiicar a los renos... */
+        por(contador inicia con 0, i mayor que TOTAL_RENOS, contador + 1)
+            bandera(renos_sem)
+    
+    pero si (duendes igual a NUM_DUENDES_GRUPO) 
+        ayudarDuendes()
+        /* Notsiicar a los duendes... */
+        por(contador inicia con 0, i mayor que NUM_DUENDES_GRUPO, contador + 1)
+            bandera(duendes_sem)
+    bandera(Exclusion Mutua)

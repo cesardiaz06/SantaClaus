@@ -1,0 +1,18 @@
+Inicio del programa
+Mientras (verdadero)
+ Declarar variables contadores de renos y duendes
+ Declarar semáforo binario de renos, duendes y santa claus
+ Esperar renos
+ Esperar duendes
+ Si son 9 renos
+  Despertar a santa
+  Entregar regalos
+  Regresar contador de renos a 9
+  Mandar a dormir a santa
+ Si son 3 duendes y no 9 renos
+  Despertar a Santa
+  Ayudar a los duendes
+  Regresar contador de duendes a 0
+  Mandar a dormir a santa
+Fin Mientras
+Fin del programa
