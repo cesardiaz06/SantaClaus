@@ -12,7 +12,7 @@ import javax.swing.DefaultListModel;
 
 /**
  *
- * @author developer
+ * @author ELNOVO
  */
 public class Main extends javax.swing.JFrame {
 
@@ -27,7 +27,7 @@ public class Main extends javax.swing.JFrame {
      * Inicializamos los semaforos de elfos y renos en 0, para que al iniciar
      * esten a la espera. El que cambia este valor es Santa
      */
-    public static Semaphore semElfos = new Semaphore(3, true);
+    public static Semaphore semElfos = new Semaphore(0, true);
     public static Semaphore semRenos = new Semaphore(0, true);
     public static Semaphore semSanta = new Semaphore(0, true);
     public static Semaphore mutex = new Semaphore(1);

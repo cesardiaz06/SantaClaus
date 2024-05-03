@@ -10,7 +10,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author developer
+ * @author LENOVO
  */
 public class SantaClaus extends Thread{
 
@@ -31,16 +31,19 @@ public class SantaClaus extends Thread{
     
     
     public static void despertar() {
-        System.out.println("Santa despierto");
-        Main.despertarSanta();
-        if (Main.modelListaSalaEspera.size() == Main.CANT_ELFOS_ATENCION) {
-            ayudarElfos();
-        } else if (Main.modelListaRenos.size() == Main.ULTIMO_RENO) {
-            prepararTrineo();
-        } else {
-            System.out.println("Me despertaron en vano :S");
-        }
+    System.out.println("Santa despierto");
+    Main.despertarSanta();
+    if (Main.modelListaSalaEspera.size() >= Main.CANT_ELFOS_ATENCION) {
+        ayudarElfos();
+    } 
+    if (Main.modelListaRenos.size() == 9) {
+        System.out.println("Hola");
+        prepararTrineo();
+    } else {
+        System.out.println("Me despertaron en vano :S");
     }
+       
+}
     
     public static synchronized void prepararTrineo() {
         System.out.println("Preparando el trineo");

@@ -10,8 +10,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Oscar Ponce
- * Equipo santa claus
+ * @author LENOVO
  */
 public class Elfo extends Thread {
 
